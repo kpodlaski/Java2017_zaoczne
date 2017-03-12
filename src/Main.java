@@ -35,6 +35,15 @@ public class Main {
     }
 
     private static void sortCars(Car[] cars) {
-
+        Car temp;
+        for(int i=0; i<cars.length;i++){
+            for (int j=i; j<cars.length; j++){
+                if (cars[i].yearOfProduction>cars[j].yearOfProduction){
+                    temp = cars[i];
+                    cars[i]=cars[j];
+                    cars[j]=temp;
+                }
+            }
+        }
     }
 }
