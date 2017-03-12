@@ -11,8 +11,8 @@ public class Car extends Vehicle implements Comparable<Car>{
     public Car(String regNr, int yearOfProduction,
                String brand, String owner) {
         super(brand, owner);
-        milage=0.0;
-        this.milage=milage;
+        this.milage=0.0;
+        this.regNr = regNr;
         this.yearOfProduction=yearOfProduction;
 
     }

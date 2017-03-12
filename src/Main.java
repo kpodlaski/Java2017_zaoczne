@@ -1,4 +1,5 @@
 import zajecia1.Car;
+import zajecia1.CompareCarsByRegNr;
 import zajecia1.Vehicle;
 
 import java.util.Arrays;
@@ -37,6 +38,12 @@ public class Main {
         System.out.println("===================");
         for(int i=0; i<cars.length; i++){
             System.out.println(cars[i].yearOfProduction + ":"+cars[i]);
+        }
+        Arrays.sort(cars,new CompareCarsByRegNr());
+        System.out.println("+++++++++++++++++");
+        for(int i=0; i<cars.length; i++){
+            System.out.println(cars[i].yearOfProduction + ":"+cars[i]
+            + " "+cars[i].regNr);
         }
     }
 
