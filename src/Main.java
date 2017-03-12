@@ -1,6 +1,8 @@
 import zajecia1.Car;
 import zajecia1.Vehicle;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -31,7 +33,11 @@ public class Main {
         for(int i=0; i<cars.length; i++){
             System.out.println(cars[i].yearOfProduction + ":"+cars[i]);
         }
-
+        Arrays.sort(cars);
+        System.out.println("===================");
+        for(int i=0; i<cars.length; i++){
+            System.out.println(cars[i].yearOfProduction + ":"+cars[i]);
+        }
     }
 
     private static void sortCars(Car[] cars) {
