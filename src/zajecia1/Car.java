@@ -18,6 +18,21 @@ public class Car extends Vehicle implements Comparable<Car>{
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Car car = (Car) o;
+
+        return regNr.equalsIgnoreCase(car.regNr);
+    }
+
+    @Override
+    public int hashCode() {
+        return regNr.hashCode();
+    }
+
+    @Override
     public int compareTo(Car o) {
         //Sortowanie rosnące z rokiem produkcji
         return -(this.yearOfProduction-o.yearOfProduction);
