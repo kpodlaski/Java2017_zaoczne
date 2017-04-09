@@ -3,3 +3,6 @@ http://merlin.phys.uni.lodz.pl/KPodlaski/zaj/java/Java_zaliczenie_zadania.pdf
 
 wykład:
 http://merlin.phys.uni.lodz.pl/KPodlaski/zaj/java/
+
+książka:
+ftp://ftp.micronet-rostov.ru/linux-support/books/programming/Java/Deitel%20P.J.,%20Deitel%20H.M.%20-%20Java%20How%20to%20Program,%209th%20Edition%20-%202012.pdf
