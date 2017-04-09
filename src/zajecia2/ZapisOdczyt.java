@@ -48,6 +48,7 @@ public class ZapisOdczyt {
         while ((line = breader.readLine())!=null
                 && !line.equals("STOP")){
             System.out.println(line);
+
         }
         breader.close();
 
