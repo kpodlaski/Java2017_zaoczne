@@ -35,6 +35,7 @@
       <component id="4183c" class="javax.swing.JButton" binding="button1" default-binding="true">
         <constraints border-constraint="Center"/>
         <properties>
+          <icon value="zajecia3/panda.jpg"/>
           <text value="Button"/>
         </properties>
       </component>

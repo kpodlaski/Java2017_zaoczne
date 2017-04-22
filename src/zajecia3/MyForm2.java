@@ -28,6 +28,10 @@ public class MyForm2 {
             public void actionPerformed(ActionEvent e) {
                 JRadioButton radio = (JRadioButton) e.getSource();
                 System.out.println("Wybrano " + radio.getText());
+                int v =
+                Integer.parseInt(radio.getText().split("p")[0]);
+                slider1.setValue(v*10);
+
             }
         };
 
@@ -39,6 +43,8 @@ public class MyForm2 {
             @Override
             public void stateChanged(ChangeEvent e) {
                 System.out.println("ZMIANA");
+                int v = slider1.getValue();
+                textPane1.setText("Slider na pozycji "+v);
             }
         });
     }
@@ -55,6 +61,6 @@ public class MyForm2 {
         okno.setLocation((int) (3*width/8),(int) (3*height/8));
         okno.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         okno.setVisible(true);
-
+        System.out.println("Koniec Programu");
     }
 }
