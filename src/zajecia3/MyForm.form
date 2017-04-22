@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="zajecia3.MyForm">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-67593"/>
+      <enabled value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="2febb" class="javax.swing.JTextField" binding="imieTextField">
+        <constraints border-constraint="North"/>
+        <properties>
+          <text value="Wpisz swoje imie"/>
+        </properties>
+      </component>
+      <component id="6d5ec" class="javax.swing.JLabel" binding="infoLabel">
+        <constraints border-constraint="South"/>
+        <properties>
+          <text value="   "/>
+        </properties>
+      </component>
+      <component id="7a7f0" class="javax.swing.JTextArea" binding="eastTextArea">
+        <constraints border-constraint="East"/>
+        <properties>
+          <columns value="10"/>
+          <lineWrap value="true"/>
+          <opaque value="false"/>
+          <rows value="20"/>
+          <text value="Jakiś text"/>
+        </properties>
+      </component>
+      <component id="4183c" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <text value="Button"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
