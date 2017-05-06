@@ -20,10 +20,10 @@ public class Client {
     }
 
 
-    public void sendToSocket() throws IOException {
+    public void sendToSocket(String s) throws IOException {
         //int c = System.in.read();
-        for (int i=0 ; i<255; i++)
-        out.write(i);
+        //for (int i=0 ; i<255; i++)
+        out.write(s.getBytes());
     }
 
     public void startListener(){
