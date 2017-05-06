@@ -12,6 +12,7 @@ public class CommunicatorForm {
     public JTextArea history;
     public JTextField toSend;
     public JButton button1;
+    public JPanel panel;
     public Client client;
 
     public CommunicatorForm() {

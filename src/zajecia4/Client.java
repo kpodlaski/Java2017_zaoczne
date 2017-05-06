@@ -1,5 +1,6 @@
 package zajecia4;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -12,6 +13,7 @@ public class Client {
     private Socket socket;
     private InputStream in;
     private OutputStream out;
+    private CommunicatorForm gui;
 
     public void connectToServer(String ip, int port) throws IOException {
         socket = new Socket(ip, port);
@@ -36,6 +38,7 @@ public class Client {
             int c = in.read();
             if (c == -1) return;
             System.out.print((char) c);
+            gui.history.append(""+(char) c);
         }
         public void run() {
             try {
@@ -50,10 +53,15 @@ public class Client {
     public static void main(String[] a) throws IOException {
         Client client = new Client();
         client.connectToServer("127.0.0.1",8000);
+        CommunicatorForm gui = new CommunicatorForm();
+        gui.client=client;
+        client.gui=gui;
+        JFrame frame = new JFrame("Okno komunikatora");
+        frame.setContentPane(gui.panel);
+        frame.setSize(400,400);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
         client.startListener();
-        while (true){
-            client.sendToSocket();
-            //System.out.println("WAITING");
-        }
+
     }
 }
