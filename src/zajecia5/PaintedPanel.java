@@ -18,15 +18,13 @@ public class PaintedPanel extends JPanel{
     public void paint(Graphics g) {
         super.paint(g);
         g.setColor( Color.MAGENTA );
-        //Rysowanie prostokąta
-        //g.drawRect(12,56,30,50);
+        //Rysowanie prostokąta//g.drawRect(12,56,30,50);
         g.fillRect((int) x,(int) y,20,20);
         g.setColor(new Color(122,122,122));
         g.drawImage(img,(int)X , (int)Y,
-                128,128, null);
+                40,40, null);
         g.setColor(Color.BLUE);
-        g.drawString("Rozmiar ekranu: w="+getWidth()
-                + "h="+getHeight(),30,250);
+        g.drawString("Rozmiar ekranu: w="+getWidth() + "h="+getHeight(),30,250);
         //Trójkąt:
         int Cx[] = {13,45,170};
         int Cy[] = {33,56,88};
